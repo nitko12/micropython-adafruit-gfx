@@ -216,6 +216,9 @@ class GFX:
             if a > b:
                 a, b = b, a
             self.hline(a, y, b-a+1, *args, **kwargs)
+
+        y = last
+
         sa = dx12 * (y - y1)
         sb = dx02 * (y - y0)
         while y <= y2:
